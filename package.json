@@ -1,6 +1,6 @@
 {
   "name": "@breautek/serializer",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "A generic serializer that can be used to serialize common structures",
   "main": "lib/api.js",
   "scripts": {
@@ -11,7 +11,7 @@
     "postversion": "git push && git push --tags"
   },
   "publishConfig": {
-    "access": "public", 
+    "access": "public",
     "registry": "https://registry.npmjs.org"
   },
   "repository": {
