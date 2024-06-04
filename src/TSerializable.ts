@@ -35,7 +35,10 @@ export type TSerializables = Error |
                             ISerializable<TSerializables> |
                             number |
                             boolean |
-                            Date | TSerializables[] | {[key: string]: TSerializables };
+                            Date |
+                            TSerializables[] |
+                            {[key: string]: TSerializables } |
+                            null;
 
 /**
  * Utility type wrap, useful if you have a concrete interface of TSerializable properties.

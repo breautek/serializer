@@ -76,6 +76,16 @@ describe('FuseSerializer', () => {
         expect(await output.text()).toBe('1970-01-01T00:00:00.000Z');
     });
 
+    it('can serialize nulls', async () => {
+        output = serializer.serialize(null);
+        expect(output).toBe(null);
+
+        output = serializer.serialize({
+            v: null
+        });
+        expect(await output?.text()).toBe('{"v":null}');
+    });
+
     it('can serialize ISerializable', async () => {
         class MyObject implements ISerializable<string> {
             private $x: number;
