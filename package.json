@@ -1,0 +1,32 @@
+{
+  "name": "@breautek/serializer",
+  "version": "0.0.0",
+  "description": "A generic serializer that can be used to serialize common structures",
+  "main": "lib/api.js",
+  "scripts": {
+    "build": "tsc",
+    "test": "jest",
+    "preversion": "npm test",
+    "prepare": "npm run build"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/breautek/serializer.git"
+  },
+  "author": "norman@breautek.com",
+  "license": "Apache-2.0",
+  "bugs": {
+    "url": "https://github.com/breautek/serializer/issues"
+  },
+  "engines": {
+    "node": ">= 18"
+  },
+  "homepage": "https://github.com/breautek/serializer#readme",
+  "devDependencies": {
+    "@types/jest": "29.5.12",
+    "jest": "29.7.0",
+    "ts-jest": "29.1.4",
+    "ts-node": "10.9.2",
+    "typescript": "5.4.5"
+  }
+}
